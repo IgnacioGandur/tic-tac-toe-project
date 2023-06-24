@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic tac toe game!</title>
+    <title>Tic Tac Toe!</title>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
+    <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+    <script src="https://kit.fontawesome.com/64a715bddf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="welcome-screen">
+        <h1>Tic Tac Toe</h1>
+        <div class="inputs">
+            <div class="player p1">
+                <label for="player1">Player One</label>
+                <input type="text" id="player1" >
+            </div>
+            <div class="player p2">
+                <label for="player2">Player Two</label>
+                <input type="text" id="player2" >
+            </div>
+        </div>
+        <button id="start-button">Start game</button>
+    </div>
+    <div class="game-container">
+        <div class="message-section" id="message"></div>
+        <div id="gameboard"></div>
+        <button id="restart-button">Restart game</button>
+    </div>
+    <div class="footer">
+        <p>Made by Ignacio Gandur | for The Odin project<a href="https://github.com/IgnacioGandur/tic-tac-toe-project" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+    </div>
 </body>
 </html>
